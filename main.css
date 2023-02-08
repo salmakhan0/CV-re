@@ -69,6 +69,22 @@ p{
 {
     width:200px;
     height:300px;
+    padding:35px 0 25px 0;
+}
+table
+{
+    padding-top: 80px;
+    padding-right: 50px;
+    text-align: left;
+    
+}
+th,
+td {
+    padding: 10px;
+}
+th
+{
+    font-size: xx-large;
 }
 .col1{
     float: left;
@@ -87,7 +103,7 @@ p{
     height: 400px;
     perspective: 1000px;
     padding-left: 255px;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 .flip-card-inner {
     position: relative;
@@ -121,6 +137,12 @@ p{
     background-color: #933C8C;
     color: white;
     transform: rotateY(180deg);
+}
+.middle-container1 {
+    background-color: #E4F9F5;
+    margin: 200px;
+    width: 100%;
+    margin-left: 0;
 }
 .bottom-container
 {
