@@ -141,7 +141,7 @@ th
 }
 .middle-container1 {
     background-color: #E4F9F5;
-    margin: 200px;
+    margin: 100px;
     width: 100%;
     margin-left: 0;
     box-sizing: border-box;
@@ -336,7 +336,7 @@ article
 {
     width:100%;
     padding: 20px 10%;
-    margin-top: -200px;
+    
 }
 main.row1
 {
@@ -348,7 +348,7 @@ main.row1
 {
     font-family:Helvetica;
     color: #11a372;
-    padding: 0px 0px 20px 30px;
+    padding: 0px 300px 20px 20px;
 }
 .col3 .contents
 {
@@ -358,10 +358,24 @@ main.row1
 .col3 .contents .box 
 {
     position: relative;
-    padding: 20px;
+    padding: 0 0 10px 20px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     cursor: pointer;
     transition: all 0.4s;
     margin-bottom: 20px;
+    text-align: left;
+}
+.box h4
+{
+    margin-bottom:-15px;
+    margin-top: 20px;
+}
+.box h3
+{
+    margin-bottom:-10px;
+}
+.box p
+{
+    margin-right: 20px;
 }
