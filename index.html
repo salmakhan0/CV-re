@@ -271,8 +271,36 @@ accusantium dolorem quibusdam aliquid, impedit eos nemo quidem? Doloribus sapien
         </article>
       
     </div>
+    <div class="portfolio">
+        <h1>Portfolio</h1>
+        <div class="work">
+            <div class="box1">
+                <video src="videos/01.mp4" type="video/mp4" loop class="clip" muted></video>
+            </div>
+        <div class="box1">
+            <video src="videos/02.mp4" type="video/mp4" loop class="clip" muted></video>
+        </div>
+        <div class="box1">
+            <video src="videos/03.mp4" type="video/mp4" loop class="clip" muted></video>
+        </div>
+        <div class="box1">
+            <video src="videos/04.mp4" type="video/mp4" loop class="clip" muted></video>
+        </div>
+        </div>
+    </div>
     <div class="bottom-container">
 
     </div>
+    <script>
+        const clip = document.querySelectorAll('.clip');
+        for(let i =0; i<clip.length; i++){
+            clip[i].addEventListener('mouseenter',function(e){
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout',function(e){
+                clip[i].pause()
+            })
+        }
+    </script>
 </body>
 </html>
