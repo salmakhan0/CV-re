@@ -5,16 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV template </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <menu id="header">
+        <a href="#" class="logo">Logo</a>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </menu>
     <div class="top-container">
+        
         <img class="img3" src="img/3.png" alt="flower3">
         <h1>I'm Salma Khan.</h1>
         <h4>Front-end Developer and Graphic Designer</h4>
         <button class="button1">
-            <a href="#" class="button">About Me</a>
+            <a href="#middle-container" class="button">About Me</a>
         </button>
     </div>
     <div class="middle-container">
@@ -23,47 +41,72 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <div class="row">
-                        <div class="col1">
-                            <img class="img4" src="img/4.jpg" alt="img4">
-                        </div>
-                        <div class="col2">
-                            <table>
-                                <tr>
-                                    <th width="200">Bio</th>
-                                    <th width="500"></th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-calendar"></i> Age
-                                    </td>
-                                    <td>26</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-envelope"></i> Email
-                                    </td>
-                                    <td>salma00543@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-phone-square"></i> phone
-                                    </td>
-                                    <td>01*********</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-address-book"></i> Address
-                                    </td>
-                                    <td>Dhaka , Bangladesh -1212</td>
-                                </tr>
-                            </table>
+                   <div class="about">
+                    <h2>ABOUT</h2>
+                   </div> 
+                   <div class="row">
+                    <div class="col1">
+                        <img class=" img4" src="img/4.jpg" alt="img4">
+                    </div>
+                    <div class="col2">
+                        <div class="para1">
+                        <p><spen style="width: 10px;">A Perfect story</spen> (Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum deleniti officia quibusdam? Aliquam vitae, deleniti vel hic error provident culpa cupiditate, tenetur quaerat repudiandae nihil corporis quibusdam enim repellendus quae.) </p>
+                        </div><br>
+                        <div class="awards">
+                        <div class="h3">
+                            <h3>Awards</h3><br>
+                            </div>
+                            <div class="awardimg">
+                                <img src="img/trophy.png" alt="trophy">
+                                <img src="img/trophy.png" alt="trophy">
+                                <img src="img/trophy.png" alt="trophy">
+                                <img src="img/trophy.png" alt="trophy">
+                                <img src="img/trophy.png" alt="trophy">
+                            </div>
                         </div>
                     </div>
+                   </div>
                 </div>
                 <div class="flip-card-back">
-                    <h1>About Me</h1>
-                    <p>Hello! I'm Walter Patterson. I am passionate about UI/UX design and Web Design. I am a skilled front-end developer and master of graphic design tools such as Photoshop and Sketch. I am a quick learner and a team worker that gets the job done. <br><br> I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.</p>
+                    <div class="wrapper">
+                    
+                        <div class="button">
+                            <div class="icon"><a href="https://web.facebook.com/profile.php?id=100069443682238" target="_blank"></a>
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </div>
+                    
+                        <div class="button">
+                            <div class="icon"><a href=""></a>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span>Twitter</span>
+                        </div>
+                    
+                        <div class="button">
+                            <div class="icon"><a href="https://instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span></a>
+                        </div>
+                    
+                        <div class="button">
+                            <div class="icon"><a href="https://codepen.io/" target="_blank">
+                    
+                                    <i class="fab fa-codepen"></i>
+                            </div>
+                            <span>Codepen</span></a>
+                        </div>
+                    
+                        <div class="button">
+                            <div class="icon"><a href="https://www.youtube.com/" target="_blank">
+                    
+                                    <i class="fab fa-youtube"></i>
+                            </div>
+                            <span>YouTube</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,6 +343,23 @@ accusantium dolorem quibusdam aliquid, impedit eos nemo quidem? Doloribus sapien
             clip[i].addEventListener('mouseout',function(e){
                 clip[i].pause()
             })
+        }
+
+                const header = document.getElementById('header');
+                const toggle = document.getElementById('toggle');
+                const navbar = document.getElementById('navbar');
+
+                document.onclick = function(e)
+                {
+            if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar')
+                {
+                    toggle.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+        }
+                toggle.onclick = function(){
+                    toggle.classList.toggle('active');
+                navbar.classList.toggle('active');
         }
     </script>
 </body>
