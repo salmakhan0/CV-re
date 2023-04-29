@@ -136,13 +136,6 @@ h4
     font-size: 30px;
     margin-bottom: 40px;
 }
-.flip-card-back p{
-    padding: 0 20px 20px 20px;
-    margin: 0;
-    text-indent: 50px;
-    font-family: Century Gothic;
-    text-align: center;
-}
 .button {
     align-items: center;
     justify-content: center;
@@ -273,49 +266,96 @@ h3
 }
 
 .flip-card-back {
-    background: #933C8C;
     transform: rotateY(180deg);
     place-items: center;
     display: grid;
+    background: #E4F9F5;
 }
-.flip-card-back .wrapper .button
-{
+.wrapper .button2 {
     display: inline-block;
     height: 60px;
     width: 59px;
     margin: 0 5px;
     overflow: hidden;
+    background: #fff;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 10px 10px #000;
     transition: all 0.3s ease-out;
 }
-.flip-card-back .wrapper .button .icon
-{
+
+.wrapper .button2:hover {
+    width: 200px;
+}
+
+.wrapper .button2 .icon {
     display: inline-block;
     height: 60px;
     width: 60px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 50px;
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.3s ease-out;
 }
-.flip-card-back .wrapper .button:nth-child(1):hover.icon
-{
-    background: #4267b2;
+
+.wrapper .button2:nth-child(1):hover .icon {
+    background: #4267B2;
 }
-.flip-card-back .wrapper .button:nth-child(2):hover.icon{
-    background: #1da1f2;
+
+.wrapper .button2:nth-child(2):hover .icon {
+    background: #1DA1F2;
 }
-.flip-card-back .wrapper .button:nth-child(3):hover.icon {
-    background: linear-gradient(45deg,#f09433 0%,#dc2743 50%. #cc2366 75%, #bc1888,100% )
+
+.wrapper .button2:nth-child(3):hover .icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%,
+            #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
-.flip-card-back .wrapper .button:nth-child(4):hover.icon {
+
+.wrapper .button2:nth-child(4):hover .icon {
     background: #333;
 }
-.flip-card-back .wrapper .button:nth-child(5):hover.icon {
-    background: #ff000f;
+
+.wrapper .button2:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.wrapper .button2 .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button2:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button2 span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button2:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button2:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button2:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button2:nth-child(4) span {
+    color: #333;
+}
+
+.wrapper .button2:nth-child(5) span {
+    color: #ff0000;
 }
 .middle-container1 {
     background-color: #E4F9F5;
