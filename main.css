@@ -678,4 +678,52 @@ object-fit: cover;
 .ref
 {
     box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 150vh;
+}
+.row3:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+.card3
+{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 550px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+}
+.title3 {
+    color: grey;
+    font-size: 18px;
+}
+.container3
+{
+    margin: 20px;
+    padding: 20px;
+}
+.container3 h2 
+{
+    margin-bottom: 10px;
+}
+.container3 .title3
+{
+    margin-bottom: 10px;
+}
+.p3
+{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
 }
