@@ -853,6 +853,7 @@ textarea {
 .bubbles img{
     width: 50px;
     animation: bubble 7s linear infinite;
+    
 }
 .bubbles
 {
@@ -861,7 +862,7 @@ textarea {
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: 0;
+    
 }
 @keyframes bubble
 {
@@ -878,7 +879,92 @@ textarea {
             opacity: 1;
     }
     100% {
-            transform: translateY(80vh);
+            transform: translateY(-80vh);
             opacity: 0;
     }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
+    width: 35px;
+}
+@media screen and (max-width:900px) and (min-width:600px)
+{
+    .img2 {
+            width: 15%;
+            float: right;
+            display: flex;
+            margin-top: 80px;
+        }
+    
+    .img5 {
+            width: 15%;
+            float: left;
+            margin-top: 80px;
+        }
+    .flip-card {
+            background-color: transparent;
+            width: 500px;
+            height: 550px;
+            padding-top: 150px;
+            display: center;
+            margin-left: 100px;
+        }
+    .img4 {
+            width: 150px;
+            height: 200px;
+            float: left;
+            margin-left: -10px;
+            margin-top: 40px;
+         }
+    .para1 p 
+    {
+        margin-top: -20px;
+
+    }
+    .awards
+    {
+        margin-top: -15px;
+    }
+    .wrapper .button2
+    {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .work .box1
+    {
+        width: 500px;
+    }
+    .contact-box
+    {
+        width: 500px;
+        height: 550px;
+        background:url("img/4.jpg") no-repeat center;
+        background-size: cover;
+        
+    }
+        .left {
+            display: none;
+        }
 }
