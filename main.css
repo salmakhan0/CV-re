@@ -968,3 +968,61 @@ textarea {
             display: none;
         }
 }
+@media screen and (max-width:600px) and (min-width:320px) {
+    .img2 {
+        display: none;
+        
+    }
+
+    .img5 {
+        display: none;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 430px;
+        height: 650px;
+        display: center;
+        margin-left: 30px;
+        margin-top: -100px;
+    }
+
+    .img4 {
+        width: 150px;
+        height: 250px;
+        float: left;
+        margin-left: -30px;
+        margin-top: 40px;
+    }
+
+    .awards {
+       margin-left: 160px;
+       margin-top: -20px;
+    }
+    .awardimg img
+    {
+        width: 8%;
+        margin-left: -50px;
+    }
+
+    .wrapper .button2 {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .work .box1 {
+        width: 500px;
+    }
+
+    .contact-box {
+        width: 500px;
+        height: 550px;
+        background: url("img/4.jpg") no-repeat center;
+        background-size: cover;
+
+    }
+
+    .left {
+        display: none;
+    }
+}
